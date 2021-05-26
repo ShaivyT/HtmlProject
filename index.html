@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>Phone Number</th>
+            <th>Netlify Project Link</th>
+          </tr>
+          <tr>
+            <td>Sachin Rajgire</td>
+            <td class="tooltip">
+                sachinrajgire@wynisco.com
+                    <span class="tooltiptext">
+                        sachinrajgire@wynisco.com
+                    </span>
+            </td>  
+            <td>7328740188</td>
+            <td>https://reaction-sachin-rajgire.netlify.app/</td>
+          </tr>
+          <tr>
+            <td>Shaivy Tiwari</td>
+            <td>shaivysh@gmail.com</td>
+            <td>8577012594</td>
+            <td>https://reaction-shaivy-tiwari.netlify.app/#/</td>
+          </tr>
+          <tr>
+              <td>Arushi Gupta</td>
+              <td>arushi.gupta@yahoo.in</td>
+              <td>6178344710</td>
+              <td>https://reaction-arushi-gupta.netlify.app/#/</td>
+          </tr>
+    </table>
+
+    <h3>Course Details</h3>
+    <ul>
+        <li>
+            Application Architecture
+            <ul><li>MVC</li></ul>
+            <ul><li>Device Breakpoint / Browser support </li></ul>
+            <ul><li>Micro Front end</li></ul>
+            <ul><li>End to end architecture and workflows / patterns / Legacy Architecture</li></ul>
+        </li>
+        <li>
+            Chrome Dev Tools
+            <ul><li>How to use different tabs</li></ul>
+            <ul><li>Box Model</li></ul>
+            <ul><li>Debugging</li></ul>
+            <ul><li>How to use browser in developer mode.</li></ul>
+        </li>
+    </ul>
+
+    <h3> Contact Us </h3>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Shaivy"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Tiwari"><br><br>
+        <input type="text" id="msg" value="Write your message here"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
